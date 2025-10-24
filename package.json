@@ -6,7 +6,7 @@
   "scripts": {
     "start:gateway": "pnpm --filter api-gateway start:dev",
     "start:user": "pnpm --filter user-service start:dev",
-    "dev": "concurrently \"pnpm run start:user\" \"pnpm run start:gateway\""
+    "dev": "concurrently -n USER,GATEWAY -c blue,green \"pnpm run start:user\" \"pnpm run start:gateway\""
   },
   "keywords": [],
   "author": "",
