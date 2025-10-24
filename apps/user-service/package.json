@@ -7,10 +7,21 @@
     "start:dev": "nest start --watch"
   },
   "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/passport-jwt": "^4.0.1",
+    "@types/passport-local": "^1.0.38",
     "dotenv": "^17.2.3",
     "prisma": "^6.18.0"
   },
   "dependencies": {
-    "@prisma/client": "^6.18.0"
+    "@nestjs/jwt": "^11.0.1",
+    "@nestjs/passport": "^11.0.5",
+    "@prisma/client": "^6.18.0",
+    "bcrypt": "^6.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0"
   }
 }
